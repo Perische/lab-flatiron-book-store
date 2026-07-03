@@ -43,7 +43,7 @@ const bookStore = {
     ]
 }
 
-// Write // Update title
+// Update title
 const bookStoreTitle = document.getElementById("header");
 bookStoreTitle.textContent = bookStore.name;
 
@@ -61,7 +61,7 @@ bookStore.books.forEach((book) => {
   // Add content
   bookTitle.textContent = book.title;
   bookAuthor.textContent = book.author;
-  bookImage.src = book.image;
+  bookImage.src = book.imageUrl;
 
   // Append to container
   bookContainer.append(bookTitle, bookAuthor, bookImage);
